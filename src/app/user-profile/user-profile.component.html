@@ -1,0 +1,7 @@
+<p>user-profile works!</p>
+<h3>Nom :{{user.name}}<br>
+  Prénom:{{user.firstName}}</h3>
+<p>{{user.quote}}</p>
+<p [hidden]="affCache">{{user.age}}</p>
+<input type="text" [(ngModel)]="user.quote"><br>
+<button (click)="affCache=!affCache">Afficher / Cacher</button>
